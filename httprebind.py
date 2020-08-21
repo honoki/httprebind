@@ -152,7 +152,7 @@ var dnsFlush = 2500;
 log('Flushing DNS');
 for(var i = 0; i < dnsFlush; ++i) {
 	var req = reqs[i] = new XMLHttpRequest();
-    req.open('GET', 'https://a' + i + '.ex.$BASE$/', true);
+    req.open('GET', 'http://a' + i + '.ex.$BASE$/', true);
     req.send(null);
 }
 while(true) {
